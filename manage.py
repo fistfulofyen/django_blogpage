@@ -20,3 +20,27 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+Note to self:
+
+create superuser:
+python manage.py createsuperuser
+
+need migrations:
+python manage.py makemigrations
+
+SQLite for development:
+postgres for production'
+
+>>> python manage.py shell
+>>> from django.contrib.auth.models import User
+>>> from blog.models import Post
+>>> post_1 = Post(title='First Post', content='This is the first post content', author=user)
+>>> post_2 = Post(title='Second Post', content='This is the second post content', author=user)
+>>> post_3 = Post(title='Third Post', content='This is the third post content', author=user)
+>>> post_1.save()
+>>> post_2.save()
+>>> post_3.save()
+
+"""
