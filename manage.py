@@ -43,4 +43,6 @@ postgres for production'
 >>> post_2.save()
 >>> post_3.save()
 
+Part 6: User registration
+
 """
